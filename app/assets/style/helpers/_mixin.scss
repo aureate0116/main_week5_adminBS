@@ -1,0 +1,25 @@
+@mixin userPhoto {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius:50%;
+    margin-right: 16px;
+    
+    img{
+        width: 40px;
+        height:auto ;
+        margin-top: -10%;
+    }
+}
+
+@mixin f12L24 {
+    font-size: 12px;
+    line-height: 24px;
+    color:$gray-600;
+}
+
+@mixin f14L21{
+    font-size: 14px;
+    line-height: 21px;
+    color:$gray-900;
+}

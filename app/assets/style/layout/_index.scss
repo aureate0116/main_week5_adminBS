@@ -1,5 +1,123 @@
-.index__h1 {
-  color:#00cc99;
-  font-size: 20px;
-  font-weight: 400;
+.title h1{
+  margin-right: 50px;
 }
+.btn{
+  padding:0px;
+}
+
+.dropdown-toggle::after{
+  content: none;
+}
+
+.content{
+  max-width: 984px;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+.content2{
+  padding:12px 32px 32px 33px;
+}*/
+
+
+.dropdown{
+  width: 320px;
+  margin-left: 33px;
+}
+
+.list-group{
+  margin-top: 6px;
+  .list-group-item .item li {
+    p{
+      font-size: 12px;
+      line-height: 24px;
+    }
+  }
+
+  .list-group-item.active{
+    background-color: $gray-100;
+    border-color: $gray-400;
+    color:#000;
+  }
+}
+
+
+/*Card*/
+.cardBlock{
+  width: 584px;
+  margin-right: 32px;
+  .commentNum{
+    font-size: 12px;
+    line-height: 24px;
+    color: $gray-600;
+    margin-bottom: 8px;
+    text-align: right;
+  }
+  .card-body{
+    padding: 0;
+    margin: 0;
+    ul{
+      padding:12px 17px;
+    }
+
+    .bottomLink {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  
+  .card-title{
+    font-size:12px;
+    line-height: 24px;
+  }
+  
+
+  .comment{
+    width: 488px;
+  }
+
+  .list-group .list-group-item {
+    .userPhoto{
+      @include userPhoto;
+    }
+
+    .f12L24{
+      @include f12L24;
+    }
+
+    .f14L21{
+      @include f14L21;
+    }
+    a{
+      border:1px solid $gray-400;
+      border-radius: 2px;
+      padding:8px 12px ;
+      display: block;
+      width: 176px;
+      background-color: $gray-100;
+      
+    }
+
+    .iconRotat{
+      transform: rotate(90deg);
+    }
+
+    .liBullet{
+      list-style-type: disc;
+      li{
+        margin-left:40px;
+      
+      }
+      
+    }
+
+  }
+
+  
+  
+}
+
+
+  
+

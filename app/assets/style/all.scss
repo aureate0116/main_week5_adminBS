@@ -3,16 +3,15 @@
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
 
-@import './layout/index.scss';
-
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;500;900&family=Roboto:ital,wght@0,500;1,500&display=swap');
 
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
-@import "reset.scss";
-@import "base.scss";
-@import "variables.scss" ;
-@import "mixin.scss";
-@import "layout.scss";
-@import "index.scss";
+@import "./base/reset";
+@import "./base/base";
+@import "./helpers/mixin";
+@import "./layout/layout";
+
+@import './layout/index';
+
 
