@@ -11566,12 +11566,6 @@ fieldset:disabled .btn {
   }
 }
 
-.index__h1 {
-  color: #00cc99;
-  font-size: 20px;
-  font-weight: 400;
-}
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -11643,50 +11637,58 @@ img {
   vertical-align: middle;
 }
 
+header {
+  padding: 32px;
+}
+
 .row, .col-1, .col {
   padding: 0;
-  border: 1px solid red;
 }
 
 .wrapper {
-  max-width: 1280px;
+  max-width: 1282px;
   margin: 0 auto;
-  border: 1px solid #000;
+  border: 1px solid #ced4da;
 }
 
 .navbar {
   width: 296px;
   padding-top: 40px;
   padding-bottom: 32px;
+  background-color: #f8f9fa;
 }
 
 .navbar h1, .navbar .h1 {
   padding-left: 32px;
 }
 
-.navbar ul a {
-  text-decoration: none;
-}
-
-.navbar ul li {
+.navbar li {
   margin-top: 29px;
   padding-left: 31px;
   padding-top: 8px;
   padding-bottom: 8px;
 }
 
-.navbar ul li a:hover, .navbar ul li a:active, .navbar ul li a:focus {
+.navbar li a {
+  text-decoration: none;
+}
+
+.navbar li a:hover, .navbar li a:active, .navbar li a:focus {
   color: #198754;
   /*$success*/
 }
 
-.navbar ul li a:hover::before, .navbar ul li a:active::before, .navbar ul li a:focus::before {
+.navbar li a:hover::before, .navbar li a:active::before, .navbar li a:focus::before {
   content: "";
   position: absolute;
   left: 0;
   width: 4px;
   height: 32px;
   border-left: 4px solid #198754;
+}
+
+.navbar li .material-icons {
+  margin-right: 16px;
 }
 
 .user {
@@ -11701,18 +11703,146 @@ img {
   margin-right: 16px;
 }
 
-.user ul li {
-  padding-left: 0px;
-}
-
-.user img {
+.user div img {
   width: 40px;
   height: auto;
   margin-top: -10%;
 }
 
+.user ul li {
+  padding-left: 0px;
+}
+
 .user p {
   font-size: 14px;
+}
+
+.title h1, .title .h1 {
+  margin-right: 50px;
+}
+
+.btn {
+  padding: 0px;
+}
+
+.dropdown-toggle::after {
+  content: none;
+}
+
+.content {
+  max-width: 984px;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+.content2{
+  padding:12px 32px 32px 33px;
+}*/
+.dropdown {
+  width: 320px;
+  margin-left: 33px;
+}
+
+.list-group {
+  margin-top: 6px;
+}
+
+.list-group .list-group-item .item li p {
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.list-group .list-group-item.active {
+  background-color: #f8f9fa;
+  border-color: #ced4da;
+  color: #000;
+}
+
+/*Card*/
+.cardBlock {
+  width: 584px;
+  margin-right: 32px;
+}
+
+.cardBlock .commentNum {
+  font-size: 12px;
+  line-height: 24px;
+  color: #6c757d;
+  margin-bottom: 8px;
+  text-align: right;
+}
+
+.cardBlock .card-body {
+  padding: 0;
+  margin: 0;
+}
+
+.cardBlock .card-body ul {
+  padding: 12px 17px;
+}
+
+.cardBlock .card-body .bottomLink {
+  margin: 0;
+  padding: 0;
+}
+
+.cardBlock .card-title {
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.cardBlock .comment {
+  width: 488px;
+}
+
+.cardBlock .list-group .list-group-item .userPhoto {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.cardBlock .list-group .list-group-item .userPhoto img {
+  width: 40px;
+  height: auto;
+  margin-top: -10%;
+}
+
+.cardBlock .list-group .list-group-item .f12L24 {
+  font-size: 12px;
+  line-height: 24px;
+  color: #6c757d;
+}
+
+.cardBlock .list-group .list-group-item .f14L21 {
+  font-size: 14px;
+  line-height: 21px;
+  color: #212529;
+}
+
+.cardBlock .list-group .list-group-item a {
+  border: 1px solid #ced4da;
+  border-radius: 2px;
+  padding: 8px 12px;
+  display: block;
+  width: 176px;
+  background-color: #f8f9fa;
+}
+
+.cardBlock .list-group .list-group-item .iconRotat {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.cardBlock .list-group .list-group-item .liBullet {
+  list-style-type: disc;
+}
+
+.cardBlock .list-group .list-group-item .liBullet li {
+  margin-left: 40px;
 }
 
 /*# sourceMappingURL=all.css.map */
