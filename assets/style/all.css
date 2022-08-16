@@ -1,12 +1,17 @@
 @charset "UTF-8";
+/*boostrap css*/
+/*google fonts & icon*/
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+TC:wght@100;500;900&display=swap");
+/*自定義的變數 用來覆蓋 bs5 前面的 !default 可以覆蓋後面的 bs default */
+/* css 先看權重在看先後 SCSS 的default 第一個權重最大*/
+/*boostrap css*/
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;500;900&family=Roboto:ital,wght@0,500;1,500&display=swap");
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -210,7 +215,7 @@ sup {
 
 a {
   color: #00cc99;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:hover {
@@ -3194,7 +3199,6 @@ textarea.form-control-lg {
   line-height: 1.5;
   color: #212529;
   text-align: center;
-  text-decoration: none;
   vertical-align: middle;
   cursor: pointer;
   -webkit-user-select: none;
@@ -3840,7 +3844,7 @@ fieldset:disabled .btn {
 .btn-link {
   font-weight: 400;
   color: #00cc99;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .btn-link:hover {
@@ -4154,7 +4158,6 @@ fieldset:disabled .btn {
   font-weight: 400;
   color: #212529;
   text-align: inherit;
-  text-decoration: none;
   white-space: nowrap;
   background-color: transparent;
   border: 0;
@@ -4372,7 +4375,6 @@ fieldset:disabled .btn {
   display: block;
   padding: 0.5rem 1rem;
   color: #00cc99;
-  text-decoration: none;
   -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
   -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
@@ -4397,19 +4399,19 @@ fieldset:disabled .btn {
 }
 
 .nav-tabs {
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 0 solid #dee2e6;
 }
 
 .nav-tabs .nav-link {
-  margin-bottom: -1px;
+  margin-bottom: 0;
   background: none;
-  border: 1px solid transparent;
+  border: 0 solid transparent;
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
 }
 
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
-  border-color: #e9ecef #e9ecef #dee2e6;
+  border-color: #ced4da #ced4da #dee2e6;
   isolation: isolate;
 }
 
@@ -4421,13 +4423,13 @@ fieldset:disabled .btn {
 
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-  color: #495057;
-  background-color: #fff;
-  border-color: #dee2e6 #dee2e6 #fff;
+  color: #212529;
+  background-color: #f8f9fa;
+  border-color: #ced4da #ced4da #f8f9fa;
 }
 
 .nav-tabs .dropdown-menu {
-  margin-top: -1px;
+  margin-top: 0;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
@@ -4512,7 +4514,6 @@ fieldset:disabled .btn {
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
   font-size: 1.25rem;
-  text-decoration: none;
   white-space: nowrap;
 }
 
@@ -5010,6 +5011,11 @@ fieldset:disabled .btn {
   border-bottom: 0;
 }
 
+.card-header-tabs .nav-link.active {
+  background-color: #fff;
+  border-bottom-color: #fff;
+}
+
 .card-header-pills {
   margin-right: -0.5rem;
   margin-left: -0.5rem;
@@ -5277,10 +5283,9 @@ fieldset:disabled .btn {
 .page-link {
   position: relative;
   display: block;
-  color: #00cc99;
-  text-decoration: none;
+  color: #212529;
   background-color: #fff;
-  border: 1px solid #dee2e6;
+  border: 1px solid #198754;
   -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -5300,16 +5305,16 @@ fieldset:disabled .btn {
   z-index: 2;
   color: #00a37a;
   background-color: #e9ecef;
-  border-color: #dee2e6;
+  border-color: #198754;
 }
 
 .page-link:focus {
   z-index: 3;
   color: #00a37a;
-  background-color: #e9ecef;
+  background-color: #fff;
   outline: 0;
-  -webkit-box-shadow: 0 0 0 0.25rem rgba(0, 204, 153, 0.25);
-          box-shadow: 0 0 0 0.25rem rgba(0, 204, 153, 0.25);
+  -webkit-box-shadow: 0;
+          box-shadow: 0;
 }
 
 .page-item:not(:first-child) .page-link {
@@ -5319,8 +5324,8 @@ fieldset:disabled .btn {
 .page-item.active .page-link {
   z-index: 3;
   color: #fff;
-  background-color: #00cc99;
-  border-color: #00cc99;
+  background-color: #198754;
+  border-color: #198754;
 }
 
 .page-item.disabled .page-link {
@@ -5620,7 +5625,6 @@ fieldset:disabled .btn {
   display: block;
   padding: 0.5rem 1rem;
   color: #212529;
-  text-decoration: none;
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.125);
 }
@@ -8363,6 +8367,14 @@ fieldset:disabled .btn {
 
 .fs-6 {
   font-size: 1rem !important;
+}
+
+.fs-7 {
+  font-size: 0.75rem !important;
+}
+
+.fs-8 {
+  font-size: 0.875rem !important;
 }
 
 .fst-italic {
@@ -11566,6 +11578,7 @@ fieldset:disabled .btn {
   }
 }
 
+/*custom code*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -11665,8 +11678,6 @@ header {
 .navbar li {
   margin-top: 29px;
   padding-left: 31px;
-  padding-top: 8px;
-  padding-bottom: 8px;
 }
 
 .navbar li a {
@@ -11717,51 +11728,28 @@ header {
   font-size: 14px;
 }
 
-.title h1, .title .h1 {
-  margin-right: 50px;
+/*@import './layout/index-temp';*/
+.container {
+  max-width: 984px;
+  margin: 0;
+  padding: 0;
 }
 
-.btn {
-  padding: 0px;
+h1, .h1 {
+  margin-right: 50px;
 }
 
 .dropdown-toggle::after {
   content: none;
 }
 
-.content {
-  max-width: 984px;
-  margin: 0;
-  padding: 0;
-}
-
-/*
-.content2{
-  padding:12px 32px 32px 33px;
-}*/
-.dropdown {
+.leftBlock {
   width: 320px;
-  margin-left: 33px;
-}
-
-.list-group {
-  margin-top: 6px;
-}
-
-.list-group .list-group-item .item li p {
-  font-size: 12px;
-  line-height: 24px;
-}
-
-.list-group .list-group-item.active {
-  background-color: #f8f9fa;
-  border-color: #ced4da;
-  color: #000;
+  padding-left: 32px;
 }
 
 /*Card*/
 .cardBlock {
-  width: 584px;
   margin-right: 32px;
 }
 
@@ -11813,13 +11801,11 @@ header {
 .cardBlock .list-group .list-group-item .f12L24 {
   font-size: 12px;
   line-height: 24px;
-  color: #6c757d;
 }
 
 .cardBlock .list-group .list-group-item .f14L21 {
   font-size: 14px;
   line-height: 21px;
-  color: #212529;
 }
 
 .cardBlock .list-group .list-group-item a {
@@ -11827,7 +11813,6 @@ header {
   border-radius: 2px;
   padding: 8px 12px;
   display: block;
-  width: 176px;
   background-color: #f8f9fa;
 }
 
@@ -11843,6 +11828,44 @@ header {
 
 .cardBlock .list-group .list-group-item .liBullet li {
   margin-left: 40px;
+}
+
+.pagination li a {
+  width: 32px;
+  height: 32px;
+}
+
+.pagination span {
+  width: 24px;
+  height: 24px;
+}
+
+.modal-body h2, .modal-body .h2 {
+  font-size: 20px;
+  line-height: 33px;
+}
+
+.modal-body h3, .modal-body .h3 {
+  margin-bottom: 18px;
+}
+
+.modal-body label {
+  margin-bottom: 4px;
+}
+
+.modal-body input {
+  margin-bottom: 16px;
+}
+
+.modal-body .group {
+  border-bottom: 1px solid #ced4da;
+  padding-bottom: 8px;
+}
+
+.modal-body a {
+  text-align: center;
+  width: 416px;
+  border: 1px solid #ced4da;
 }
 
 /*# sourceMappingURL=all.css.map */

@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   
 
-  <title>首頁</title>
+  <title>Apply</title>
   <link rel="stylesheet" href="./assets/style/all.css">
   
 </head>
@@ -76,7 +76,7 @@
     <div class="row justify-content-between">
         <div class="col-md-4 pe-3"> <!--left all(4)摺疊 + tabs -->
             <div class="leftBlock">
-                <a class="btn btn-link fw-bold d-flex text-dark" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <a class="btn btn-link d-flex text-dark" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                     All(4)
                     <span class="material-icons dropdown-toggle text-success ms-2">expand_more</span>
                 </a>
@@ -85,7 +85,7 @@
                     <ul class="nav nav-tabs flex-column " id="myTab" role="tablist">
                         <!--tab選單項目1-->
                         <li class="nav-item border border-gray400" role="presentation">
-                        <a class="nav-link active link-dark py-3" id="item1-tab" data-bs-toggle="tab" data-bs-target="#item1" type="button" role="tab" aria-controls="home" aria-selected="true">
+                        <a class="nav-link active link-dark" id="item1-tab" data-bs-toggle="tab" data-bs-target="#item1" type="button" role="tab" aria-controls="home" aria-selected="true">
                         <!--(1) id item1-tab 對應 tab-content 內的 aria-labelledby="item1-tab" 
                             (2) data-bs-target="#item1" 對應 tab-content 內的 id="item1" -->
                             <ul class="item">
@@ -102,7 +102,7 @@
                         </li>
 
                         <li class="nav-item border border-gray400" role="presentation">
-                        <a class="nav-link link-dark py-3" id="item2-tab" data-bs-toggle="tab" data-bs-target="#item2" type="button" role="tab" aria-controls="item2" aria-selected="false">
+                        <a class="nav-link link-dark" id="item2-tab" data-bs-toggle="tab" data-bs-target="#item2" type="button" role="tab" aria-controls="item2" aria-selected="false">
                             <ul class="item">
                                 <li class="d-flex justify-content-between mb-1"> 
                                   <p class="fs-7">Chapter Assignment 1 </p> <p class="fs-7">12 hrs ago</p></li>
@@ -114,7 +114,7 @@
                         </a>
                         </li>
                         <li class="nav-item border border-gray400" role="presentation">
-                        <a class="nav-link link-dark py-3" id="item3-tab" data-bs-toggle="tab" data-bs-target="#item3" type="button" role="tab" aria-controls="item3" aria-selected="false">
+                        <a class="nav-link link-dark" id="item3-tab" data-bs-toggle="tab" data-bs-target="#item3" type="button" role="tab" aria-controls="item3" aria-selected="false">
                             <ul class="item">
                                 <li class="d-flex justify-content-between mb-1"> 
                                 <p class="fs-7">Final Assignment</p> <p class="fs-7">18 hrs ago</p></li>
@@ -127,7 +127,7 @@
                         </li>
 
                         <li class="nav-item border border-gray400" role="presentation">
-                            <a class="nav-link link-dark py-3" id="item4-tab" data-bs-toggle="tab" data-bs-target="#item4" type="button" role="tab" aria-controls="item4" aria-selected="false">
+                            <a class="nav-link link-dark" id="item4-tab" data-bs-toggle="tab" data-bs-target="#item4" type="button" role="tab" aria-controls="item4" aria-selected="false">
                                 <ul class="item">
                                     <li class="d-flex justify-content-between mb-1"> 
                                       <p class="fs-7">Final Assignment</p> <p class="fs-7">19 hrs ago</p></li>
@@ -186,42 +186,8 @@
                         </li>
                         
                         <li class="list-group-item d-flex align-items-start">
-                
-                          <div class="userPhoto"><img src="./assets/images/andychen.jpeg" alt="andychen"></div>
-                
-                          <div class="comment">
-                            <ul class="d-flex justify-content-between">
-                                <li>
-                                    <p class="h6 fw-bold">Andy Chen (You)</p>
-                                    <p class="f12L24 mb-3 text-secondary">13:24 AM (1 hours ago)</p>
-                                </li>
-                                
-                                <li class="d-flex">
-                                    <a class="p-0 border-0 bg-white text-dark" href="#"><span class="material-icons">
-                                    star_outline
-                                    </span></a>
-
-                                    <a class="p-0 border-0 bg-white text-dark" href="#"><span class="material-icons ms-4">edit
-                                    </span></a>
-                                    </li>
-                            </ul>
-                            
-                            <p class="f14L21">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q. <br/><br/>
-                              
-                              You can: <br/><br/>
-                              <ul class="liBullet f14L21">
-                                  <li>adjust the <code class="text-success">vertical-align </code>of the image to position it elsewhere (e.g.<code class="text-success">middle</code> le  ) or</li>
-                                  <li>change the <code class="text-success"> display</code> so it isn't inline.</li>
-                              </ul>
-                            </p>
-                            <a class="fs-6 btn btn-ligh fw-bold d-flex mt-3 mb-3" href="#" download="HW-2-David.zip">
-                              <span class="material-icons iconRotat">attachment</span>
-                              HW-2-David.zip
-                            </a>
-                          </div>
-                
-                          <!--div id="editor" class="editor">This is some sample content.</div-->
-                
+                            <!-- ckeditor -->
+                            <div id="editor">This is some sample content.</div>
                 
                         </li>
                       </ul>
@@ -242,8 +208,8 @@
                     </ul>
                     
                     <ul class="d-flex bottomLink">
-                        <li><a href="#" type="button" class="btn btn-outline-success me-3 p-1 pe-4 ps-4">Mark as read</a></li>
-                        <li><a href="apply.html" type="button" class="btn btn-success p-1 pe-4 ps-4 ">Reply</a></li>
+                        <li><button type="button" class="btn btn-outline-success me-3 p-1 pe-4 ps-4">Mark as read</button></li>
+                        <li><button type="button" class="btn btn-success p-1 pe-4 ps-4 ">Reply</button></li>
                     </ul>
                 
                     </div>
@@ -521,7 +487,7 @@
                             </a>
                           </div>
                 
-                          <!--div id="editor" class="editor">This is some sample content.</div-->
+                         
                 
                 
                         </li>
@@ -553,6 +519,8 @@
         </div>
     </div>
 </div>
+
+
     
   
 </div>
