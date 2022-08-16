@@ -6,6 +6,7 @@
 
 .wrapper{
    max-width: 1282px;
+   
    margin: 0 auto;
    border: 1px solid $gray-400;
    
@@ -24,8 +25,7 @@
     li{
         margin-top: 29px;
         padding-left:31px;
-        padding-top: 8px;
-        padding-bottom: 8px;
+        
         a{
             text-decoration: none;
             

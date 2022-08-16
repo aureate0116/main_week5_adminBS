@@ -1,17 +1,29 @@
+/*boostrap css*/
 @import "../../../node_modules/bootstrap/scss/functions";
-@import "./helpers/variables";
+
+/*google fonts & icon*/
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+TC:wght@100;500;900&display=swap');
+
+/*自定義的變數 用來覆蓋 bs5 前面的 !default 可以覆蓋後面的 bs default */
+/* css 先看權重在看先後 SCSS 的default 第一個權重最大*/
+@import "./helpers/variables"; 
+
+/*boostrap css*/
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;500;900&family=Roboto:ital,wght@0,500;1,500&display=swap');
 
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
+
+/*custom code*/
 @import "./base/reset";
 @import "./base/base";
 @import "./helpers/mixin";
 @import "./layout/layout";
 
+/*@import './layout/index-temp';*/
 @import './layout/index';
+@import './layout/admin';
 
 
