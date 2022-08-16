@@ -11868,4 +11868,10 @@ h1, .h1 {
   border: 1px solid #ced4da;
 }
 
+.row table {
+  width: 920px;
+  margin: 0 auto;
+  margin-bottom: 63px;
+}
+
 /*# sourceMappingURL=all.css.map */
