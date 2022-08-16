@@ -185,9 +185,18 @@
                 
                         </li>
                         
-                        <li class="list-group-item d-flex align-items-start">
+                        <li class="list-group-item d-flex p-0 m-0 align-items-start">
                             <!-- ckeditor -->
-                            <div id="editor">This is some sample content.</div>
+                            <div id="editor" class="editor">
+                              Reply an answer…
+                              
+
+                            </div>
+
+                            <ul class="d-flex bottomLink">
+                              <li><button type="button" class="btn btn-outline-success me-3 p-1 pe-4 ps-4">Mark as read</button></li>
+                              <li><button type="button" class="btn btn-success p-1 pe-4 ps-4 ">Reply</button></li>
+                            </ul>
                 
                         </li>
                       </ul>
@@ -529,6 +538,20 @@
  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.1/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
 
+ <!--script src="./assets/js/all.js"></script-->
+ 
+ <script>
+
+  ClassicEditor
+    .create( document.querySelector( '#editor' ) )
+    .then( editor => {
+    console.log( editor );
+  } )
+    .catch( error => {
+    console.error( error );
+  } );
+
+  </script>
 
 </body>
 
